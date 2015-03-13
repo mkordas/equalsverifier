@@ -39,7 +39,7 @@ public interface Annotation {
 	 * 
 	 * @return An Iterable of annotation descriptor strings.
 	 */
-	public Iterable<String> descriptors();
+	Iterable<String> descriptors();
 	
 	/**
 	 * Whether the annotation applies to the class in which is appears only, or
@@ -48,7 +48,7 @@ public interface Annotation {
 	 * @return True if the annotation is inherited by subclasses of the class
 	 * 			in which the annotation appears.
 	 */
-	public boolean inherits();
+	boolean inherits();
 	
 	/**
 	 * Validates the annotation based on its properties.
@@ -56,5 +56,5 @@ public interface Annotation {
 	 * @param properties An object that contains information about the annotation.
 	 * @return True if the annotation is valid and can be used as intended.
 	 */
-	public boolean validate(AnnotationProperties properties);
+	boolean validate(AnnotationProperties properties);
 }
