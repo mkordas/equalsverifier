@@ -49,7 +49,7 @@ public enum TestSupportedAnnotations implements Annotation {
 	private final boolean inherits;
 	private final List<String> descriptors;
 
-	private TestSupportedAnnotations(boolean inherits, String... descriptors) {
+	TestSupportedAnnotations(boolean inherits, String... descriptors) {
 		this.inherits = inherits;
 		this.descriptors = Arrays.asList(descriptors);
 	}

@@ -121,7 +121,7 @@ public enum SupportedAnnotations implements Annotation {
 	private final boolean inherits;
 	private final List<String> descriptors;
 
-	private SupportedAnnotations(boolean inherits, String... descriptors) {
+	SupportedAnnotations(boolean inherits, String... descriptors) {
 		this.inherits = inherits;
 		this.descriptors = Arrays.asList(descriptors);
 	}
