@@ -230,7 +230,7 @@ public class TypeHelper {
 		public final int l = 0;
 		@SuppressWarnings("unused")
 		private static final int I = 0;
-		final static int J = 0;
+		static final int J = 0;
 		protected static final int K = 0;
 		public static final int L = 0;
 	}
@@ -251,7 +251,7 @@ public class TypeHelper {
 
 	public interface Interface {}
 	
-	public static abstract class AbstractClass {
+	public abstract static class AbstractClass {
 		int field;
 	}
 	
@@ -378,7 +378,7 @@ public class TypeHelper {
 		public int inapplicable;
 	}
 
-	public static abstract class AbstractEqualsAndHashCode {
+	public abstract static class AbstractEqualsAndHashCode {
 		@Override
 		public abstract boolean equals(Object obj);
 		

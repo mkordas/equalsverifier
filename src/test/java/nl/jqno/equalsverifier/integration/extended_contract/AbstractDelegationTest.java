@@ -153,7 +153,7 @@ public class AbstractDelegationTest extends IntegrationTestBase {
 				.verify();
 	}
 	
-	private static abstract class AbstractClass {
+	private abstract static class AbstractClass {
 		private int i;
 		
 		abstract void someMethod();
@@ -186,7 +186,7 @@ public class AbstractDelegationTest extends IntegrationTestBase {
 		@Override public int hashCode() { return defaultHashCode(this); }
 	}
 	
-	static abstract class AbstractEqualsDelegator {
+	abstract static class AbstractEqualsDelegator {
 		private final int i;
 		
 		public AbstractEqualsDelegator(int i) { this.i = i; }
@@ -220,7 +220,7 @@ public class AbstractDelegationTest extends IntegrationTestBase {
 		}
 	}
 	
-	static abstract class AbstractHashCodeDelegator {
+	abstract static class AbstractHashCodeDelegator {
 		private final int i;
 		
 		public AbstractHashCodeDelegator(int i) { this.i = i; }
@@ -244,7 +244,7 @@ public class AbstractDelegationTest extends IntegrationTestBase {
 		}
 	}
 	
-	static abstract class AbstractToStringDelegator {
+	abstract static class AbstractToStringDelegator {
 		private final int i;
 		
 		public AbstractToStringDelegator(int i) { this.i = i; }
@@ -277,7 +277,7 @@ public class AbstractDelegationTest extends IntegrationTestBase {
 		}
 	}
 	
-	static abstract class AbstractDelegator {
+	abstract static class AbstractDelegator {
 		abstract void abstractDelegation();
 		
 		private int i;
@@ -396,7 +396,7 @@ public class AbstractDelegationTest extends IntegrationTestBase {
 		}
 	}
 	
-	static abstract class ThrowsAbstractMethodErrorWithMessage {
+	abstract static class ThrowsAbstractMethodErrorWithMessage {
 		private final int i;
 		
 		public ThrowsAbstractMethodErrorWithMessage(int i) { this.i = i; }

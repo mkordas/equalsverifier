@@ -279,7 +279,7 @@ public class ArrayTest extends IntegrationTestBase {
 		}
 	}
 
-	final static class TwoMultidimensionalArraysShallowHashCodeForSecond {
+	static final class TwoMultidimensionalArraysShallowHashCodeForSecond {
 		private final Object[][] first;
 		private final Object[][] second;
 

@@ -172,7 +172,7 @@ public class SubclassTest extends IntegrationTestBase {
 		}
 	}
 	
-	static abstract class AbstractRedefinablePoint {
+	abstract static class AbstractRedefinablePoint {
 		private final int x;
 		private final int y;
 
